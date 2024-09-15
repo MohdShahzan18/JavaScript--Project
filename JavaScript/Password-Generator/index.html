@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div id="pass" class="main">
+            <span id="copyPass">Password will show here...</span>
+            <button id="copy" onclick="copyPassword()"><i class="fa-regular fa-clone"></i></button>
+        </div>
+        <div class="main">
+            <label for="length">Password Length</label>
+            <input type="number" value="8" min="8" max="30" id="length">
+        </div>
+        <p>Uncheck box according to your password...</p>
+        <div class="main">
+            <label for="symbol">Include Symbol</label>
+            <input type="checkbox" id="symbol" checked>
+        </div>
+        <div class="main">
+            <label for="num">Include Number</label>
+            <input type="checkbox" id="num" checked>
+        </div>
+        <div class="main">
+            <label for="lower">Include lowerCase</label>
+            <input type="checkbox" id="lower" checked>
+        </div>
+        <div class="main">
+            <label for="upper">Include upperCase</label>
+            <input type="checkbox" id="upper" checked>
+        </div>
+        
+        <button type="submit" id="submit" class="button-53" role="button" onclick="passGenerator()">Submit</button>
+    </div>
+    
+    <p id="passcopy"></p>
+    <!-- <p class="note">Note:You can generate minimum 8 char password or maximum 30 char.</p> -->
+    <script src="script.js"></script>
+</body>
+</html> 
