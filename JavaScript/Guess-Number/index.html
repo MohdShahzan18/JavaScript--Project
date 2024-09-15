@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="chat.css"> -->
+</head>
+<body>
+    <div class="container">
+        <p id="pp">Try and guess a number between 1 to 100.</p>
+        <p id="pp">You have 10 attempt to guess the right number.</p>
+        <form id="form">
+            <label for="nums">Guess the Number:  </label>
+            <input type="text" name="num" id="nums">
+            <button type="submit" id="submt">Guess</button>
+        </form>
+        <div id="result">
+            <p >Previous Guesses: <span id="previous"></span></p>
+            <p >Remaining Attempts: <span id="remaining">10</span></p>
+            <p id="lowHigh"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degree Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+      integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <!-- <i class="fa-solid fa-temperature-three-quarters icon"></i> -->
+      <form onclick="calculateTemp(); return false" id="Temp">
+        <p>Enter the temperature you want to convert:</p>
+        <div id="input-group">
+          <input
+            type="number"
+            name="value"
+            id="values"
+            placeholder="Enter value"
+            required
+          />
+          <select name="select" id="selects">
+            <option value="cel">Celsius</option>
+            <option value="fah">Fahrenheit</option>
+          </select>
+        </div>
+        <input type="submit" value="Convert" id="submit" />
+        <p id="output"></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
