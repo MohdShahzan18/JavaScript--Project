@@ -25,10 +25,6 @@ body {
   margin-right: 100px;
 }
 
-.section1 h2{
-  margin=top:5px;
-}
-
 .about {
   padding: 5px;
   width: 500px;
@@ -135,6 +131,7 @@ section {
   padding: 20px;
   box-sizing: border-box;
   font-size: 1.5rem;
+  positoion:relative;
 }
 
 .sub-para {
@@ -159,7 +156,8 @@ section {
 h2 {
   text-align: start;
   font-size: 3rem;
-  margin-bottom: 50px;
+  positon: absolute;
+  top:85px;
 }
 
 #cursor {
