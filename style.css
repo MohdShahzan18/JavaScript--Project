@@ -25,6 +25,10 @@ body {
   margin-right: 100px;
 }
 
+.section1 h2{
+  margin=top:10px;
+}
+
 .about {
   padding: 5px;
   width: 500px;
