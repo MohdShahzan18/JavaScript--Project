@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "NewFont";
+    src: url(Pervitina-Dex-FFP.ttf), url(Bionic\ City.otf) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    background-color: #191825;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 88px;
+    color: lightgoldenrodyellow;
+    /* color: rgb(188, 92, 27); */
+    font-family: "NewFont";
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: center;
+    text-shadow:-3px 10px 10px rgba(249, 141, 141, 0.2);
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, 
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, 
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    animation: Float 2s linear infinite;
+}
+@keyframes Float {
+    0%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}

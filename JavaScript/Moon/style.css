@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  background-image: url(img/moon-img.jpeg);
+  /* position: relative;*/
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box {
+  width: 40%;
+  height: 75vh;
+  background-color: rgb(248, 205, 111);
+  /* position: absolute;
+    left: 30%;
+    top: 100px; */
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  animation: change 10s linear infinite;
+}
+
+h1 {
+  font-size: 48px;
+  color: aliceblue;
+}
+
+.moon {
+  background-color: rgb(225, 138, 38);
+  width: 18vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgb(225, 138, 38) 0px 54px 55px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px 4px 6px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px 12px 13px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px -3px 5px;
+
+  &::after {
+    content: "";
+    width: inherit;
+    aspect-ratio: 1;
+    border-radius: inherit;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: Moon 10s ease-in-out infinite;
+  }
+}
+
+@keyframes Moon {
+  0% {
+    translate: 100%;
+    scale: 1;
+  }
+  50% {
+    translate: 0%;
+    scale: 0.9;
+  }
+  100% {
+    translate: -100%;
+    scale: 1;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-color: rgb(248, 205, 111);
+  }
+  25% {
+    background-color: rgb(248, 205, 111);
+  }
+  50% {
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(225, 138, 38) 0px 54px 55px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px 4px 6px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px 12px 13px, rgb(225, 138, 38) 0px -12px 30px,
+    rgb(225, 138, 38) 0px -3px 5px;
+  }
+  75% {
+    background-color: rgb(248, 205, 111);
+  }
+  100% {
+    background-color: rgb(248, 205, 111); 
+  }
+}

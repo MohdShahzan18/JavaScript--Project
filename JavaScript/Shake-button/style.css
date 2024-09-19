@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #191825;
+}
+button {
+    padding: 36px 66px;
+    border: 2px solid #865dff;
+    text-align: center;
+    font-size: 40px;
+    color: #865dff;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+  
+    &:hover {
+      animation: Tilt 0.2s linear;
+      color: red;
+      border: 5px solid red;
+    }
+  }
+
+
+
+@keyframes Tilt {
+  0% {
+    rotate: 20deg;
+  }
+  50% {
+    rotate: -20deg;
+  }
+  100% {
+    rotate: 20deg;
+  }
+}
