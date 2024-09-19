@@ -9,7 +9,7 @@
 } 
 
 body {
-  background-color: rgb(15, 23, 42);
+  background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
   width: 100vw;
   height: 100vh;
   margin: 23px;
@@ -153,11 +153,11 @@ h1{
   -moz-transition: all 0.6s linear;
   -ms-transition: all 0.6s linear;
   -o-transition: all 0.6s linear;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 a{
