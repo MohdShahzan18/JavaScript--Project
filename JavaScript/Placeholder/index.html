@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placeholder Image</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <h1>Placeholder Image Generator</h1>
+    <div class="main-div">
+      <div class="first">
+        <label for="select">Select Size -</label>
+        <select name="" id="select">
+          <option value="150x150">Small (150x150)</option>
+          <option value="200x200">Medium Square (200x200)</option>
+          <option value="350x150">Medium (350x150)</option>
+          <option value="400x400">Large Square (400x400)</option>
+          <option value="650x350">Large (650x350)</option>
+          <option value="800x500">X-Large (800x500)</option>
+          <option value="1920x1080">Full HD (1920x1080)</option>
+        </select>
+        <div class="imageName">
+          <label for="imageName">Text on Image -</label>
+          <input type="text" name="text" id="imageName" />
+        </div>
+        <div class="bg-color">
+          <label for="bg-color">Choose Background Color -</label>
+          <input type="color" value="#f0f0f0" name="color" id="bg-color" />
+        </div>
+        <div class="txt-color">
+          <label for="txt-color">Choose Text Color -</label>
+          <input type="color" value="#fef65b" name="color" id="txt-color" />
+        </div>
+      </div>
+      <div class="second">
+        <img src="" />
+        <div class="last-div">
+          <span id="text">Link will be appear here...</span>
+          <button id="copy" onclick="copyPassword()"><i class="fa-regular fa-clone"></i></button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
