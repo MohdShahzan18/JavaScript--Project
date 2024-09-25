@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Mochiy+Pop+P+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: rgb(63, 172, 127);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 172, 127, 0.9523459041819853) 6%,
+    rgba(97, 218, 99, 1) 93%
+  );
+  background: rgb(63,172,127);
+background: linear-gradient(7deg, rgba(63,172,127,0.9523459041819853) 6%, rgba(240,240,240,1) 88%);
+background: rgb(63,172,127);
+background: linear-gradient(0deg, rgba(63,172,127,0.9523459041819853) 48%, rgba(240,240,240,1) 98%);
+
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.container {
+  position: absolute;
+  left: 34%;
+  top: 38%;
+  width: 500px;
+  padding: 10px;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input[type="date"] {
+  width: 50%;
+  border: 0.2em solid #0e6608;
+  padding: 0.8em 0.9em;
+  border-radius: 2em;
+  color: #008957;
+  font-size: 1rem;
+  &::-webkit-datetime-edit-text {
+    color: #008957;
+    padding: 0 0.3em;
+  }
+}
+
+#result {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button-88 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 30px;
+}
+
+.button-88:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-88:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
