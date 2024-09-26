@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Length Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Length Converter</h1>
+    <div class="container">
+      <form  id="doConversion">
+        <div id="Val">
+          <label for="select">From:</label>
+          <select name="selectVal" id="select" class="drop-down">
+            <option value="met">Meter</option>
+            <option value="kilo">Kilometer</option>
+            <option value="cen">Centimeter</option>
+            <option value="mm">Milimeter</option>
+            <option value="mil">Miles</option>
+            <option value="yd">Yards</option>
+            <option value="ft">Feet</option>
+            <option value="in">Inches</option>
+          </select>
+        </div>
+        <label for="nums" class="nums">Enter Number:</label>
+        <input
+          type="text"
+          name="num"
+          id="nums"
+          class="nums"
+          placeholder="value"
+        />
+        <div>
+          <label for="selects">Tooo:</label>
+          <select name="selectCon" id="selects" class="drop-down">
+            <option value="Met">Meter</option>
+            <option value="Kilo">Kilometer</option>
+            <option value="Cen">Centimeter</option>
+            <option value="Mm">Milimeter</option>
+            <option value="Mil">Miles</option>
+            <option value="Yd">Yards</option>
+            <option value="Ft">Feet</option>
+            <option value="In">Inches</option>
+          </select>
+          <!-- <label for="result">Enter Number:</label>
+          <input type="text" name="num" id="result" placeholder="output" /> -->
+        </div>
+
+        <div id="btn">
+          <button type="submit" id="submit-btn">Convert</button>
+          <button type="reset" id="reset-btn">Reset</button>
+        </div>
+      </form>
+      <div id="show">
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
