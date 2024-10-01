@@ -9,6 +9,7 @@ body {
   background-image: linear-gradient(#6482ad, #0a4075);
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .head-clock {
