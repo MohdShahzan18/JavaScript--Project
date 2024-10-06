@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <form >
+        <h1>Register</h1>
+      <div id="name">
+        <div>
+          <label for="fname">First Name</label><br />
+          <input type="text" name="fname" id="fname" placeholder="Mohd" />
+        </div>
+        <div class="lname">
+          <label for="lname">Last Name</label><br />
+          <input type="text" name="lname" id="lname" placeholder="Shahzan" />
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="xyz@gmail.com"
+        />
+      </div>
+      <div>
+        <label for="num">Number</label><br />
+        <input
+          type="number"
+          name="num"
+          id="num"
+          placeholder="9891XXXX53"
+          minlength="10"
+          maxlength="10"
+        />
+      </div>
+      <div>
+        <legend>Address</legend>
+        <textarea name="address" id="address" cols="45" rows="5"></textarea>
+      </div>
+      <div id="name">
+        <div>
+          <label for="pass">Password</label><br />
+          <input type="password" name="password" id="pass" placeholder="password" />
+        </div>
+        <div class="lname">
+          <label for="pass">Re-type Password</label><br />
+          <input type="password" name="password" id="pass" placeholder="password" />
+        </div>
+      </div>
+      <button type="submit" class="button-30" role="button">Submit</button>
+    </form>
+</div>
+  </body>
+</html>
