@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(cute-cat-pattern-7jy17bjv4n34spld.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat-x;
+    overflow:hidden ;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.container{
+  height: 50vh;
+  width: auto;
+
+  & .title{
+    font-size: 4rem;
+  }
+
+  & .select-container{
+    padding-top: 20px;
+
+    & p{
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    & select{
+        width: 300px;
+        height: 40px;
+        font-size: 1.6rem;
+        text-align: center;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: 3px solid lightgray;
+}
+  }
+}
+
+.card{
+    padding: 5px;
+    display: flex; 
+    background: white;
+    font-size: 1.4rem; 
+    width: 850px; 
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    & h5{
+        font-size: 1.4rem;
+    }
+    
+    & .namess {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+
+        
+        & #breedName{
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+        & #origin{
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+    }
+    
+& #info{
+      margin-left: 20px;
+    & p{
+        margin-bottom: 10px;
+    }
+}
+   & #about{
+        width: 400px;
+    }
+}
+
+.button-1 {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.button-1-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-1-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-1-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-1-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-1:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-1:hover .button-1-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-1:active .button-1-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-1:hover .button-1-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-1:active .button-1-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-1:focus:not(:focus-visible) {
+  outline: none;
+}
