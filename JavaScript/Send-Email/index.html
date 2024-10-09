@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Mail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Send Mails</h1>
+        <img
+          src="5b342c1463c055e75416366bdfce3c10-Photoroom.png"
+          alt="gmail"
+          width="200px"
+        />
+      </div>
+      <div class="form">
+        <form id="mailform">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Full Name" required />
+          <label for="email_id">Email</label>
+          <input type="email" id="email_id" placeholder="ABC@gmail.com" required />
+          <label>Message</label>
+          <textarea id="message" cols="30" rows="10" required></textarea>
+         <div id="msg">
+           <button type="submit">Send Mail</button>
+           <div id="popup-message" class="popup-message"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> 
