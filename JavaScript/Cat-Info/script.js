@@ -48,11 +48,11 @@ getDetail.addEventListener("click", async (e) => {
   
   para1.innerText = name;
   para2.innerText =  origin;
-  para3.innerText = `${life} Years`;
-  para4.innerText = nature;
+  para3.innerText = nature;
+  para4.innerText = `${life} Years`;
   para5.innerText = altName;
   para6.innerText = `${about.slice(0, 250)}.`;
-  para7.innerText = `${weight}Kg`
+  para7.innerText = `${weight} Kg`
 
   img.src = imgID;
 });
