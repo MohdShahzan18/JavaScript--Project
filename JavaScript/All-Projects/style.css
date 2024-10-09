@@ -121,6 +121,7 @@ h1{
 }
 .top20 {
   background-image: url(img/Translator-ss.png);
+  background-position: center;
 }
 .top21 {
   background-image: url(img/Jokes-ss.png);
