@@ -61,7 +61,11 @@ function copyPassword(){
   navigator.clipboard.writeText(copyText.textContent);
   // alert("password copy")
 
-  copy.innerHTML  = "Password Copied Successfully!!"
+  const popup = document.querySelector('#popup-message')
 
-
+  popup.style.display = "block"
+  
+  setTimeout(()=>{
+    popup.style.display = "none"
+  },2000)
 }
