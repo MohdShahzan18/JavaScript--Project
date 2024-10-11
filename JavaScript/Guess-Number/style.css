@@ -133,6 +133,11 @@ button:active {
   cursor: pointer;
   background-color: rgba(134, 6, 10, 0.927);
   width: 12rem;
+  height:4rem;
   color: #fff;
   padding: 2px;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  text-align: center;
 }
