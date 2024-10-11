@@ -17,8 +17,8 @@ body{
 }
 
 .container{
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 500px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     background-color: #FF7043;
@@ -27,7 +27,7 @@ body{
 }
 
 .main{
-  font-size: 20px;
+  font-size: 2rem;
   text-align: start;
   width: 100%;
   font-weight: bold;
@@ -37,9 +37,9 @@ body{
 
 #length{
   width: 120px;
-  height: 30px;
+  height: 40px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   background-color: #3DD1E7;
 }
@@ -63,6 +63,7 @@ h1{
   color: #3DD1E7;
   color: #000;
   border: 1px solid black;
+  font-size: 2.8rem;
 }
 .button-53 {
   background-color: #3DD1E7;
@@ -120,18 +121,17 @@ h1{
   }
 }
 
-
 #submit{
-  margin-top: 0px;
-  margin-left: 200px;
+  margin-top: 40px;
+  margin-left: 300px;
 }
 
 
 .fa-clone{
   position: absolute;
-  left: 350px;
+  left: 460px;
   font-size: 30px;
-  top: 10px;
+  top: 13px;
   cursor: pointer;
   color: #E5E7EB;
 }
@@ -145,8 +145,8 @@ input[type="checkbox"]:checked{
  input[type="checkbox"] {
   appearance: none;  
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #ccc;
   border-radius: 3px;
   outline: none;
@@ -159,8 +159,10 @@ input[type="checkbox"]:checked::before {
   display: block;
   text-align: center;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 30px;
+  padding-top:4px ;
 }
+
 
 button{
   background: transparent;
@@ -173,4 +175,21 @@ button{
   font-size: 3rem;
   font-weight: bolder;
   position: fixed;  
+  margin-top: 30px;
+}
+
+#popup-message{
+  background-color: green;
+  color: white;
+  margin-left: 440px;
+  margin-top: -18%;
+  width: 200px;
+  font-size: 1.1rem ;
+  border-radius: 5px;
+  display: none;
+  
+}
+
+#copyPass{
+  text-align: center;
 }
