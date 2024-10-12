@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div class="container">
+        <div class="title">
+          <img
+            src="istockphoto-1830419112-612x612-Photoroom.png"
+            alt="world"
+            width="100px"
+            height="100px"
+            id="logo"
+          />
+          <h2>Weather App</h2>
+        </div>
+        <div class="input-container">
+          <input type="text" id="input" placeholder="City Name" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+      <div id="darmMode">
+        <button id="nightBtn"><i class="fa-solid fa-cloud-moon"></i></button>
+        <button id="dayBtn"><i class="fa-solid fa-cloud-sun"></i></button>
+      </div>
+      <div class="main-head">
+        <div class="head">
+          <h3 id="main-head">Weather for City Name</h3>
+        </div>
+        <div class="img">
+          <img
+            id="main-img"
+            src="10d.png"
+            alt="cloud img"
+            width="150px"
+            height="auto"
+          />
+        </div>
+      </div>
+      <p id="desc">Cloud</p>
+      <div class="main-card">
+        <div class="card">
+          <h4>Temperatures</h4>
+          <div class="side-btn">
+            <h3 id="tempH">29&degC</h3>
+            <div class="btnDiv">
+              <button id="fahrenhiet">F</button>
+              <button id="celsius">C</button>
+            </div>
+          </div>
+          <div class="para">
+            <p id="temp">Temperature</p>
+            <p id="tempMin">Min Temperature</p>
+            <p id="tempMax">Max Temperature</p>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Humidity Info</h4>
+          <h3 id="humidityH">78%</h3>
+          <div class="para">
+            <p id="feelsLike">Feels Like</p>
+            <p id="humidity">Humidity</p>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Wind Info</h4>
+          <h3 id="windSpeedH">2.2Km/h</h3>
+          <div class="para">
+            <p id="Wind">Wind Degree</p>
+            <p id="windSpeed">Wind Speed</p>
+            <p id="windGust">Wind gust</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">
+      <button id="showPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="footer"></div>
+      <button id="showMoreBtn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

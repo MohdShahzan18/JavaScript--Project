@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(amazing-sunny-day-wallpaper-1.jpg);
+  background-size: cover;
+  color: black;
+  overflow: hidden;
+}
+
+.container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  & .title {
+    z-index: 2;
+    display: flex;
+    margin-left: 100px;
+    font-size: 2rem;
+    & h2 {
+      margin-top: 20px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  & .input-container {
+    z-index: 3;
+    margin-right: 230px;
+    margin-top: 35px;
+    position: relative;
+    display: flex;
+    width: 400px;
+
+    & input {
+      height: 55px;
+      width: 350px;
+      padding-left: 10px;
+      font-size: 1.6rem;
+      border: none;
+      backdrop-filter: blur(1px);
+      --webkit-backdrop-filter: blur(3.5px);
+      --moz-backdrop-filter: blur(3.5px);
+      background-color: rgba(220, 218, 218, 0.598);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    & input::after {
+      backdrop-filter: blur(3.5px);
+      --webkit-backdrop-filter: blur(3.5px);
+      --moz-backdrop-filter: blur(3.5px);
+      background-color: rgba(221, 219, 219, 0.25);
+      border: none;
+    }
+    & button {
+      height: 55px;
+      width: 75px;
+      margin-left: 275px;
+      position: absolute;
+      background-color: rgb(0, 70, 234);
+      border: none;
+
+      & i {
+        font-size: 1.8rem;
+        color: white;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.main-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-head {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#tempH {
+  margin-right: 10px;
+}
+
+#desc {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 80px;
+}
+
+.card {
+  margin-left: 20px;
+  width: 300px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  & h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  & h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  & .para {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+.footer {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+
+.item {
+  width: 130px;
+  height: 170px;
+  margin: 20px;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  text-align: center;
+}
+
+.Ptemp {
+  margin-top: -10px;
+}
+
+.btn {
+  position: relative;
+  width: fit-content;
+  left: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#showMoreBtn,
+#showPrevBtn {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.side-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .btnDiv {
+    border-left: 2px solid black;
+  }
+  & button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fa-solid {
+  font-size: 3rem;
+  height: 40px;
+}
+
+.iconImg {
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+}
+
+#darmMode {
+  position: relative;
+  & button {
+    background-color: transparent;
+    border: none;
+  }
+
+  & #dayBtn {
+    margin-bottom: 40px;
+    position: absolute;
+    left: 93%;
+    top: 10%;
+    border-left: 2px solid black;
+    padding-left: 15px;
+  }
+  & #nightBtn {
+    margin-bottom: 40px;
+    position: absolute;
+    left: 89%;
+    top: 10%;
+  }
+}
