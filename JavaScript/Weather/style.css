@@ -227,6 +227,7 @@ body {
   & button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   & #dayBtn {
@@ -240,7 +241,7 @@ body {
   & #nightBtn {
     margin-bottom: 40px;
     position: absolute;
-    left: 89%;
+    left: 88%;
     top: 10%;
   }
 }
