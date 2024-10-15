@@ -8,7 +8,6 @@
 } 
 
 body {
-  /* background-color: rgb(15, 23, 42); */
   background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
   width: 100vw;
   height: 100vh;
@@ -166,8 +165,8 @@ h1{
   -moz-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
-  backdrop-filter: blur(10px); /* Blurring the background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
 }
