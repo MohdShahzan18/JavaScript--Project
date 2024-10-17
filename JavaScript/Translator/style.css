@@ -127,8 +127,8 @@ textarea {
 
 #copy {
   position: absolute;
-  right: 28%;
-  top: 74%;
+  right: 30%;
+  top: 72%;
   border: none;
   font-size: 25px;
   background-color: white;
@@ -153,4 +153,142 @@ textarea {
   font-size: 16px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 10;
+}
+
+@media (width < 1440px) {
+  #copy {
+    position: absolute;
+    right: 26%;
+    top: 72%;
+  }
+}
+@media (width < 1300px) {
+  #copy {
+    position: absolute;
+    right: 24%;
+    top: 72%;
+  }
+}
+@media (width < 1200px) {
+  #copy {
+    position: absolute;
+    right: 22%;
+    top: 72%;
+  }
+}
+@media (width < 1100px) {
+  #copy {
+    position: absolute;
+    right: 20%;
+    top: 72%;
+  }
+}
+@media (width < 1000px) {
+  #copy {
+    position: absolute;
+    right: 16%;
+    top: 72%;
+  }
+}
+
+@media (width < 900px) {
+    .container{
+      width: 600px;
+      height: 450px;
+    }
+    .fa-arrow-right-arrow-left {
+      margin-top: 25px;
+      margin-left: 85px;
+      font-size: 2rem;
+    }
+    .selected-container {
+
+     & .to {
+        margin-left: 215px;
+      }
+    }
+    #copy {
+      position: absolute;
+      right: 14%;
+      top: 70%;
+    }
+    .title {
+      font-size: 2.5rem;
+    }
+    #iconImg{
+      width: 120px;
+      height: 80px;
+    }
+
+    #result ,  #input{
+      width: 250px;
+    }
+
+}
+
+@media (width < 600px) {
+  .container{
+    width: 500px;
+  }
+
+  .fa-arrow-right-arrow-left {
+    margin-top: 25px;
+    margin-left: 65px;
+    font-size: 1.7rem;
+  }
+  .selected-container {
+   
+   & .to {
+      margin-left: 145px;
+    }
+   & .from {
+      margin-left: 35px;
+    }
+  }
+  #result  , #input  {
+    height: 180px;
+    width: 200px;
+  }
+  
+  #copy {
+    position: absolute;
+    right: 16%;
+    top: 68%;
+  }
+}
+
+@media (width < 500px) {
+   .container{
+    width: 380px;
+    height: 700px;
+   }
+   .title {
+    font-size: 2rem;
+  }
+
+  #iconImg{
+    width: 100px;
+    height: 60px;
+  }
+  .selected-container {
+    display: flex;
+    flex-direction: column;
+    & .to {
+      margin-left: 35px;
+    }
+  }
+  #submit{
+    margin-left: 125px;
+  }
+  .box{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+    &  #result  , #input  {
+      height: 160px;
+      width: 290px;
+    }
+  }
 }
