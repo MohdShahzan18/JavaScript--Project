@@ -77,7 +77,7 @@ body {
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
-    & button:hover{
+    & button:hover {
       transform: scale(1);
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
@@ -88,8 +88,10 @@ body {
       -moz-transition: all 0.5s ease-in-out;
       -ms-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
-}
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
   }
 }
 
@@ -101,14 +103,12 @@ body {
   justify-content: center;
 }
 
-
 #mainT {
   width: 500px;
   height: fit-content;
   margin-bottom: 30px;
   margin-top: 20px;
   margin-left: 20px;
-
 }
 
 .tasks {
@@ -116,7 +116,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
-  position:relative;
+  position: relative;
   left: 5%;
 }
 
@@ -150,11 +150,10 @@ p {
   height: fit-content;
   padding-left: 10px;
   margin-left: 50px;
- 
 }
 
-#popup-message{
-  position: absolute;
+#popup-message {
+  position: fixed;
   left: 63%;
   top: 45%;
   background-color: #00b09b;
@@ -172,7 +171,7 @@ p {
   z-index: 10;
 }
 
-.check{
+.check {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -185,7 +184,7 @@ p {
   left: 1%;
 }
 
-.check:hover{
+.check:hover {
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -198,9 +197,115 @@ p {
   -o-transform: scale(1.4);
 }
 
-.fa-check{
+.fa-check {
   position: relative;
   top: -25%;
   left: 5%;
   color: black;
 }
+
+@media (width < 880px) {
+  .container {
+    width: 500px;
+
+    & .input-container {
+      & input {
+        height: 40px;
+        width: 300px;
+      }
+
+      & button {
+        width: 100px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .dltBtn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.9rem;
+    cursor: pointer;
+    position: absolute;
+    left: 93%;
+  }
+  .tasks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    left: -10%;
+  }
+
+  .taskList{
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+
+  .check {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 14%;
+  }
+}
+
+@media (width < 570px) {
+
+  .container {
+    width: 400px;
+  
+  & .title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    & h3 {
+      margin-right: 40px;
+    }
+  }
+  & .input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & #submit{
+      margin-top: 10px;
+      margin-bottom: 20px;
+        }
+  }
+  }
+  .tasks {
+    margin-top: 70px;
+    position: relative;
+    left: -18%;
+  }
+  .dltBtn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.9rem;
+    cursor: pointer;
+    position: absolute;
+    left: 77%;
+    margin-left: 10%;
+  }
+  #popup-message {
+    font-size: 0.8rem;
+    width: 130px;
+  height: 30px;
+  }
+  }
