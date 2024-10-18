@@ -263,7 +263,7 @@ textarea {
     height: 700px;
    }
    .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   #iconImg{
@@ -290,5 +290,10 @@ textarea {
       height: 160px;
       width: 290px;
     }
+  }
+  #copy {
+    position: absolute;
+    right: 20%;
+    top: 80%;
   }
 }
