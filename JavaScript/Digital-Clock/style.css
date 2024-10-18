@@ -29,25 +29,16 @@ body {
   border: 1px solid rgb(255, 255, 255, 0.18);
   margin-bottom: 5rem;
   margin-top: 7rem;
-  /* background: rgba(0, 0, 0, 0.7); */
   background: rgba(255, 255, 255, 0.19);
   z-index: 1;
   backdrop-filter: blur(25px);
-  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-  0 0 20px rgba(255, 255, 255, 0.8),
-  0 0 30px rgba(255, 255, 255, 0.8),
-  0 0 40px rgba(0, 255, 255, 0.8),
-  0 0 70px rgba(0, 255, 255, 0.8),
-  0 0 80px rgba(0, 255, 255, 1),
-  0 0 100px rgba(0, 255, 255, 1),
-  0 0 150px rgba(0, 255, 255, 1);  */
 }
 
 .container::before,
 .container::after {
   content: "";
   position: absolute;
-  z-index: 0; /* Keep them behind the .head-clock */
+  z-index: 0;
 }
 
 .container::before {
@@ -107,17 +98,115 @@ h1 {
   -ms-transition: all 3s ease-in-out;
   -o-transition: all 3s ease-in-out;
   cursor: pointer;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),  0 0 10px rgba(255, 255, 255, 0.7),  0 0 15px rgba(0, 0, 0, 0.8),  0 0 20px rgb(2, 2, 2),  0 0 25px rgb(24, 24, 24),  0 0 30px rgb(9, 9, 9),  0 0 35px rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(0, 0, 0, 0.8),
+    0 0 20px rgb(2, 2, 2), 0 0 25px rgb(24, 24, 24), 0 0 30px rgb(9, 9, 9),
+    0 0 35px rgb(0, 0, 0);
 }
 
-/* h1:hover {
-  transition: all 3s ease-in-out;
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -ms-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
-  cursor: pointer;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),  0 0 10px rgba(255, 255, 255, 0.7),  0 0 15px rgba(0, 0, 0, 0.8),  0 0 20px rgb(2, 2, 2),  0 0 25px rgb(24, 24, 24),  0 0 30px rgb(9, 9, 9),  0 0 35px rgb(0, 0, 0);
-} */
+@media (width < 1268px) {
+  .container {
+    margin-left: 25%;
+  }
+}
 
+@media (width < 1168px) {
+  .container {
+    margin-left: 20%;
+  }
+}
 
+@media (width < 1068px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 600px;
+    height: 220px;
+    margin-top: -40px;
+    & .head-clock {
+      font-size: 140px;
+    }
+  }
+  .container::before {
+    height: 120px;
+    width: 120px;
+    top: -50px;
+    left: -100px;
+  }
+  .container::after {
+    height: 150px;
+    width: 150px;
+    left: 550px;
+    top: 160px;
+  }
+}
+@media (width < 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    width: 400px;
+    height: 180px;
+    margin-top: -40px;
+    & .head-clock {
+      font-size: 100px;
+    }
+  }
+  .container::before {
+    height: 80px;
+    width: 80px;
+    top: -10px;
+    left: -60px;
+  }
+  .container::after {
+    height: 100px;
+    width: 100px;
+    left: 360px;
+    top: 130px;
+  }
+  .head-clock {
+    font-size: 100px;
+    padding: auto;
+  }
+}
+@media (width < 568px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    width: 350px;
+    height: 180px;
+    margin-top: -40px;
+    & .head-clock {
+      font-size: 100px;
+    }
+  }
+  .container::before {
+    top: 3px;
+    left: -60px;
+  }
+  .container::after {
+    left: 300px;
+    top: 130px;
+  }
+  .head-clock {
+    font-size: 80px;
+    padding: auto;
+  }
+  #hour,
+  #min,
+  #sec,
+  span {
+    font-size: 80px;
+  }
+}
+@media (width < 480px) {
+  .container {
+    margin-left: 10%;
+  }
+  .container::before {
+    top: 3px;
+    left: -40px;
+  }
+}
